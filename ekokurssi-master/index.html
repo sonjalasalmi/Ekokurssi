@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BIO02 kurssi Sodankylän keskilämpötila</title>
+
+    <link rel="stylesheet" href="css/eko.css" />
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="title">
+            <h1>Sodankylän keskilämpötila 1908-2019</h1>
+            <h2 id="currentYear">2019</h2>
+        </div>
+        <div id="eko-input">
+            <input type="range" min="0" max="111" value="0"
+                                                 id="sliderRange"><br />
+        </div>
+        <div id="eko-output">
+            <div id="credits">
+              <p><span>@</span>
+              <span> Sonja Alasalmi & Mikko Pajula</span></p>
+            <div id="tempBox">
+              <p><span id="lampotila"></span>
+              <span> °C</span></p>
+            </div>
+            <!-- Kuvatasot tulee tähän -->
+            <img src="images/year1908.png" />
+            <img id="eko-layer-1" src="images/empty.png" onerror="this.src='images/empty.png';" />
+            <img id="eko-layer-2" src="images/empty.png" onerror="this.src='images/empty.png';" />
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/eko.js"></script>
+</body>
+
+</html>
